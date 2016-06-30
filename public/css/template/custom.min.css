@@ -1,0 +1,16 @@
+.page-logo a {
+	float: left;
+	display: block;
+	width: 255px;
+	height: 75px;
+	font-size: 3rem;
+	padding: 2rem 0;
+	color: #32c5d2;
+}
+.page-logo a:hover, a:active, a:link, a:visited {
+	text-decoration: none;
+	color: #32c5d2;
+}
+.portlet>.portlet-title>.actions>.btn, .portlet>.portlet-title>.actions>.btn-group>.btn, .portlet>.portlet-title>.actions>.btn-group>.btn.btn-sm, .portlet>.portlet-title>.actions>.btn.btn-sm {
+    margin-right: 6px;
+}
