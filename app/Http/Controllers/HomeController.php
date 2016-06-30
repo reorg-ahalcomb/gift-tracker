@@ -25,7 +25,7 @@ class HomeController extends Controller
     	$last_import = Import::all()
     						->sortByDesc('id')
     						->first();
-    	$updated = $last_import->created_at;
+    	$updated = isset($last_import) ? $last_import->created_at->diffForHumans() : 'Never';
 
     	// Table columns to display
     	$columns = array(
@@ -37,7 +37,7 @@ class HomeController extends Controller
 
        	return view('home', [
        		'columns' => $columns,
-       		'updated' => $updated->diffForHumans()
+       		'updated' => $updated
        	]);
     }
 
